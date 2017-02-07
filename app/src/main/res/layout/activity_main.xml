@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tuantrandev.tuantran.alphaanimation.MainActivity">
+
+    <Button
+        android:text="Face IN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnFadeIn" />
+
+    <Button
+        android:text="Fade Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnFadeIn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnFadeOut" />
+
+    <Button
+        android:text="Repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnFadeOut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnRepeat" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/tuantran"
+        android:layout_below="@+id/btnFadeOut"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imgTuanTran" />
+
+    <Button
+        android:text="Zoom Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnZoomIn"
+        android:layout_alignRight="@+id/btnFadeOut"
+        android:layout_alignEnd="@+id/btnFadeOut"
+        android:id="@+id/btnZoomOut" />
+
+    <Button
+        android:text="Zoom Repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnZoomOut"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnZoomRepeat" />
+
+    <Button
+        android:text="Zoom IN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnZoomIn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="94dp" />
+
+    <Button
+        android:text="Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMoveUp"
+        android:layout_below="@+id/btnZoomOut"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:text="Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnMoveDown"
+        android:layout_toRightOf="@+id/btnMoveDown"
+        android:layout_toEndOf="@+id/btnMoveDown"
+        android:id="@+id/btnLeft" />
+
+    <Button
+        android:text="Down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMoveDown"
+        android:layout_alignBaseline="@+id/btnMoveUp"
+        android:layout_alignBottom="@+id/btnMoveUp"
+        android:layout_toRightOf="@+id/btnMoveUp"
+        android:layout_toEndOf="@+id/btnMoveUp" />
+
+    <Button
+        android:text="Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnLeft"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btnRight" />
+
+    <Button
+        android:text="Sequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSequence"
+        android:layout_toRightOf="@+id/btnMoveUp"
+        android:layout_toEndOf="@+id/btnMoveUp"
+        android:layout_below="@+id/btnMoveUp" />
+
+    <Button
+        android:text="Rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRotate"
+        android:layout_alignBaseline="@+id/btnSequence"
+        android:layout_alignBottom="@+id/btnSequence"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Parallel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnRotate"
+        android:layout_toRightOf="@+id/btnSequence"
+        android:layout_toEndOf="@+id/btnSequence"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/btnParallel" />
+
+
+</RelativeLayout>
